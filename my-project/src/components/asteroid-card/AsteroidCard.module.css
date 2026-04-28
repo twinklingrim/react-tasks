@@ -1,0 +1,20 @@
+.container {
+    width: 920px;
+    max-width: 100%;
+    min-height: 200px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.safe {
+    background: linear-gradient(90deg, #CFF370 0%, #7DE88C 100%);
+}
+
+.dangerous {
+    background: linear-gradient(90deg, #FFB199 0%, #FF0844 100%);
+}
