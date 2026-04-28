@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.container[data-image-type="mini"] {
+    background-image: url("/asteroid-mini.png");
+    background-size: 70px;
+    background-position: 150px 50px;
+}
+
+.container[data-image-type="stone"] {
+    background-image: url("/asteroid-medium.png");
+    background-size: 30%;
+    background-position: 75px 0px;
+}
+
+.container[data-image-type="comet"] {
+    background-image: url("/asteroid-big.png");
+    background-size: 85%;
+    background-position: left top;
+}
+
+.dino {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: 56px;
+    height: 48px;
+    background: url("/dino.png") no-repeat bottom / contain;
+    z-index: 1;
+}
+
+.info {
+    width: 250px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 12px;
+     text-align: left; 
+}
+
+.row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #000;
+    margin: 0 10px;
+}
