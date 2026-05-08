@@ -1,6 +1,6 @@
 import styles from "./AsteroidData.module.css";
 
-export const AsteroidData = ({ name, date, distance, size, imageType }) => {
+export const AsteroidData = ({ name, date, distance, size, imageType, isKilometers }) => {
     return (
         <div className={styles.container} data-image-type={imageType}>
             <div className={styles.dino}></div>
@@ -16,7 +16,7 @@ export const AsteroidData = ({ name, date, distance, size, imageType }) => {
                 <div className={styles.row}>
                     <span className={styles.label}>Расстояние</span>
                     <div className={styles.dots}></div>
-                    <span>{distance}</span>
+                    <span>{isKilometers ? `${distance.kilometers} км` : `${distance.lunar} лунных дистанций`}</span>
                 </div>
 
                 <div className={styles.row}>

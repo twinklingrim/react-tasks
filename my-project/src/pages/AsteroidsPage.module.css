@@ -19,14 +19,6 @@
     align-items: center;
 }
 
-.controls {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-}
-
 .banner {
     width: 100%;
     margin-bottom: 30px;
@@ -41,13 +33,4 @@
 .checkboxLabel {
     display: flex;
     align-items: center;
-}
-
-.unitBtn {
-    background: none;
-    border: none;
-    text-decoration: underline;
-    cursor: pointer;
-    padding: 0;
-    font-size: 16px; 
 }

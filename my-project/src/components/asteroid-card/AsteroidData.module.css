@@ -63,3 +63,8 @@
     border-bottom: 1px dotted #000;
     margin: 0 10px;
 }
+
+.row span:last-child {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
