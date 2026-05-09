@@ -1,6 +1,16 @@
 import styles from "./AsteroidAction.module.css";
+import { useAction } from "../../ActionContext";
 
-export const AsteroidAction = ({isDangerous}) => {
+export const AsteroidAction = ({ isDangerous, asteroid }) => {
+  const { addToBasket } = useAction();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToBasket(asteroid);
+  };
+
+
   return (
     <div className={styles.container}>
       <div>Оценка:</div>

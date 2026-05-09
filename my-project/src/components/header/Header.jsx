@@ -1,4 +1,5 @@
 import styles from "./Header.module.css";
+import { NavLink } from "react-router";
 
 export const Header = () => {
   return (
@@ -13,8 +14,13 @@ export const Header = () => {
         </div>
         
         <nav className={styles.nav}>
-          <span className={styles.activeLink}>Астероиды</span>
-          <span className={styles.link}>Уничтожение</span>
+          <NavLink to="/" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Астероиды
+          </NavLink>
+
+          <NavLink to="/destroyment" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Уничтожение
+          </NavLink>
         </nav>
       </div>
     </header>

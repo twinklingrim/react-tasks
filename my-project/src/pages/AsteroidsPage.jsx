@@ -1,4 +1,5 @@
 import { Header } from "../components/header/Header";
+import { Footer } from "../components/footer/Footer";
 import { AsteroidsList } from "../components/asteroids-list/AsteroidsList";
 import styles from "./AsteroidsPage.module.css";
 import { useState } from "react";
@@ -22,6 +23,7 @@ export const AsteroidsPage = () => {
         </div>
         <AsteroidsList isOnlyDanger={isOnlyDanger} isKilometers={isKilometers}/>
       </main>
+      <Footer />
     </div>
   );
 };
