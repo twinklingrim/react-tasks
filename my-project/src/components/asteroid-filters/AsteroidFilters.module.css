@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 920px;
+  box-sizing: border-box;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.distanceSelector {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #186DD6;
+  text-decoration: none;
+}
+
+.selected {
+  font-weight: 700;
+  color: #000;
+  cursor: default;
+}
